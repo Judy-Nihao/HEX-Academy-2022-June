@@ -1,0 +1,183 @@
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    color: #3F5D45;
+    font-size: 16px;
+    list-style: none;
+    /* outline: solid 1px coral; */
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+body{
+    font-family: PingFang TC, "Microsoft JhengHei",  STHeiti, sans-serif, serif;
+}
+
+.wrap{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 40px 42px 60px 42px;
+
+}
+
+header{
+ display:flex;
+ justify-content: space-between ;
+ align-items: center;
+ height: 40px;
+ margin-bottom: 30px;
+}
+
+header .logo{
+    width:  211px;  
+}
+
+header .nav {
+    display:flex;  
+    justify-content: space-between ;
+    align-items: center;
+    width: 319px;
+}
+
+header .nav .cart img{
+    vertical-align: top;
+}
+
+.containerUp{
+    margin-bottom: 60px;;
+}
+
+/*切到一半才想起來要錄影，所以註解掉已經寫好的才開始錄影。*/
+
+.containerBottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+}
+
+.product_area{
+    display: flex;
+}
+
+.menu{
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.menu li{
+    font-size: 24px;
+    padding: 16px 64px;
+    background: #fff;
+}
+
+.menu li:nth-child(1){
+    color: #fff;
+    background: #3F5D45;
+}
+
+.menu li:nth-child(2){
+background: #EAF0ED;
+}
+
+.product{
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item{
+    position: relative;
+    text-align: center;
+}
+
+.product-item .tag{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 36px;
+    padding: 10px 10px 9px 10px;
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.product-item .favorite{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+
+.product_pic img{
+    vertical-align: top;
+}
+
+.product-item{
+    text-align: center;
+    border: 1px solid #EAF0ED;
+}
+
+.product_info{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    border-top:1px solid #EAF0ED;;
+    border-bottom:1px solid #EAF0ED;;
+    line-height: 28px;
+}
+
+.product_name{
+    width: 173px;
+    padding: 14px;
+    border-right:1px solid #EAF0ED;;
+}
+
+.price{
+    width: 127px;
+    padding: 14px 0px ;
+}
+
+.add_to_cart{
+    font-size: 24px;
+    padding: 16px 90px;
+    background: #EAF0ED;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.pagination{
+    display: flex;
+    align-items: center;
+    border: 1px solid #EAF0ED;
+    margin-top: 30px;
+}
+
+
+.pagination a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 16px 26px;    line-height: 28px;
+    border-right: 1px solid #EAF0ED;
+}
+
+.pagination a:nth-child(1),.pagination a:nth-child(5) {
+    font-size: 0px;
+    line-height: 1;
+    padding: 18px;
+}
+
+.pagination a:nth-child(2){
+    background: #3F5D45;
+    color: #fff;
+}
+
+
+
