@@ -43,7 +43,15 @@ header .nav {
     width: 319px;
 }
 
+header .nav li a{
+    text-decoration: none;
+}
+
 header .nav .cart img{
+    vertical-align: top;
+}
+
+.banner img{
     vertical-align: top;
 }
 
@@ -56,11 +64,13 @@ header .nav .cart img{
 .containerBottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content:right;
+    justify-content: flex-end;
 }
 
 .product_area{
     display: flex;
+    justify-content: end;
+    align-items: ;
 }
 
 .menu{
@@ -69,10 +79,16 @@ header .nav .cart img{
     margin-right: 20px;
 }
 
-.menu li{
+.menu li {
+    text-decoration: none;
     font-size: 24px;
     padding: 16px 64px;
     background: #fff;
+}
+
+.menu li a{
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .menu li:nth-child(1){
@@ -147,10 +163,6 @@ background: #EAF0ED;
     background: #EAF0ED;
     font-weight: bold;
 }
-
-
-
-
 
 
 .pagination{
