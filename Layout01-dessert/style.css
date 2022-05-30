@@ -110,6 +110,7 @@ background: #EAF0ED;
 .product-item{
     position: relative;
     text-align: center;
+    margin-bottom: 36px;
 }
 
 .product-item .tag{
