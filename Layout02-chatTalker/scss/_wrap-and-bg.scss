@@ -1,0 +1,61 @@
+//最外面3層：包裹、背景分區、容器
+
+.wrap{
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+
+.bg{
+    .container{
+        max-width: 1088px;
+        margin: 0 auto;
+    }
+}
+
+
+
+// 背景圖(放圓球和頂端banner)
+.bg.home{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+
+    background-repeat: no-repeat, no-repeat;
+
+    background-size: contain, 360px;
+
+    background-position: top right, -222px 492px;
+
+}
+
+.bg.platform{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+
+    background-repeat: no-repeat;
+    background-size: 360px;
+    background-position: -223px -168px;
+   
+}
+
+.bg.character{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+    background-repeat: no-repeat;
+    background-position: 1140px 320px; 
+}
+
+.bg.client{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+        background-repeat: no-repeat;        
+        background-position: 1140px -180px; 
+}
+
+.bg.user{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;        background-position: 50px 32px;
+    background-size: 150px;
+
+    h2{
+        text-align: center;
+        margin-bottom: 48px;
+    }
+}

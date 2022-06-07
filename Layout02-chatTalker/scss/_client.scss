@@ -1,0 +1,79 @@
+
+// client 快速了解客戶輪廓
+ 
+.bg.client .container{
+    padding-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.client-box{
+    width: 507px;
+    height: 588px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-right: 137px;
+}
+
+.cl-item{
+     width: 230px;
+     box-shadow: 0px 2px 10px #00000014;border-radius: 12px;
+     padding-top: 32px;
+     padding-left: 32px;
+
+    .cl-icon{
+        width: 86px;
+        height: 86px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+
+        box-shadow: 0px 2px 10px #00000014;
+
+        margin-bottom: 24px;
+
+        img{
+             width: 52px;
+        }
+     }
+
+     h5{
+         font-weight: 700;
+         margin-bottom: 16px;
+         line-height: 26px;
+     }
+
+     p{
+         margin-bottom: 48px;
+         line-height: 24px;
+     }
+}
+
+.client-text{
+    h2{
+        line-height: 46px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    h5{
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
+    p.price{
+        display: inline-block;
+        line-height: 25px;
+        color: #fff;
+        background-color: $price-cold-color;
+        padding: 12px 32px;
+        border-radius: 27px;
+
+    }
+}
+

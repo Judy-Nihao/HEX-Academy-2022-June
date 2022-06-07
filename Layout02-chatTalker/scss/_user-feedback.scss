@@ -1,0 +1,87 @@
+
+// user 好評如潮
+
+.bg.user{
+    margin-bottom: 100px;
+    
+    h2{
+        margin-bottom: 104px;
+    }
+}
+
+.user-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+.user-item{
+    position: relative;
+    width: 352px;
+    padding: 48px 32px 24px 32px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 24px;
+
+    p{
+        line-height: 24px;
+    }
+
+    .feedback{
+        padding-bottom: 24px;
+        border-bottom: solid 1px #DDD;
+    }
+
+    .company{
+        padding-top: 24px;
+        font-weight: 700;
+    }
+
+    .job-title{
+        padding-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .star{
+            width: 90px;
+            height: 16px;
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg);
+            background-size: 16px;
+            background-repeat: space;
+        }
+    }
+}
+
+
+.user-img{
+    position: absolute;
+    width: 80px;
+    top: -56px;
+    left: 32px;
+
+    img{
+        border-radius: 50%;
+    }
+}
+
+
+.user-switch{
+    display: flex;
+    justify-content: center;
+
+    .switch-circle{
+        width: 10px;
+        height: 10px;
+        background-color: #DDD;
+        border-radius: 10px;
+        margin-right: 8px;
+
+        &:nth-child(4){
+            width: 16px;
+            background-color: $star-color;
+        }
+    }
+}
