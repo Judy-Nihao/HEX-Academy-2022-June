@@ -4,7 +4,7 @@
     max-width: 1366px;
     margin: 0 auto;
     background-color: #fff;
-
+    
 }
 
 .bg{
@@ -26,6 +26,12 @@
 
     background-position: top right, -222px 492px;
 
+    @media screen and (max-width: 576px){
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+
+        background-position: bottom;
+    }
+
 }
 
 .bg.platform{
@@ -35,6 +41,9 @@
     background-size: 360px;
     background-position: -223px -168px;
    
+    @media screen and (max-width: 576px){
+        background-image: none;
+    }
 }
 
 .bg.character{

@@ -1,21 +1,55 @@
 
 // client 快速了解客戶輪廓
- 
+
 .bg.client .container{
     padding-top: 100px;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1088px){
+        justify-content: space-around;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;        
+    }
+
+    @media screen and (max-width: 576px){
+        flex-direction: column-reverse; 
+        justify-content: center;
+        margin-bottom: 50px;
+        padding-top: 0;
+     }
+
 }
 
 .client-box{
-    width: 507px;
+    max-width: 507px;
     height: 588px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     margin-right: 137px;
+
+    @media screen and (max-width: 1088px){
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 768px){
+        margin: 0;
+    }
+
+    @media screen and (max-width: 576px){
+        max-width: 260px;
+        justify-content: center;
+        padding-top: 50px;
+        height: auto;
+     }
+   
 }
 
 .cl-item{
@@ -23,6 +57,10 @@
      box-shadow: 0px 2px 10px #00000014;border-radius: 12px;
      padding-top: 32px;
      padding-left: 32px;
+
+     @media screen and (max-width: 576px){
+        margin-bottom: 30px;
+     }
 
     .cl-icon{
         width: 86px;
@@ -43,7 +81,6 @@
      }
 
      h5{
-         font-weight: 700;
          margin-bottom: 16px;
          line-height: 26px;
      }
@@ -55,15 +92,29 @@
 }
 
 .client-text{
+
+    @media screen and (max-width: 768px){
+        max-width: 768px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    @media screen and (max-width: 576px){
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+
     h2{
         line-height: 46px;
         font-weight: 700;
-        margin-bottom: 16px;
+        margin-bottom: 16px; 
     }
 
     h5{
         line-height: 26px;
         margin-bottom: 24px;
+        font-weight: 400;
     }
 
     p.price{
@@ -75,5 +126,7 @@
         border-radius: 27px;
 
     }
+
+   
 }
 
