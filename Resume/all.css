@@ -68,7 +68,7 @@ a{
 
 /* 以下是共通設定 */
 body{
-    font-family: "PingFang TC", "SF Pro Text", "Microsoft JhengHei", sans-serif, serif;
+    font-family: "SF Pro Text", "PingFang TC", "Microsoft JhengHei", sans-serif, serif;
     line-height: 1.5;
 }
 
@@ -84,11 +84,9 @@ body{
     padding-bottom: 8px;
     border-bottom: 1px solid #000;
     margin-bottom: 16px;
-
 }
 
 .EN{
-    font-family: "SF Pro Text";
     color: #A00404;
     font-size: 1.5rem;
     font-weight: 500;
@@ -111,7 +109,6 @@ body{
 }
 
 ul{
-    font-family: "SF Pro Text";
     font-size: 1.5em;
     font-weight: 300;
 }
@@ -132,7 +129,7 @@ p{
 }
 
 .name{
-    font-family: "SF Pro Text";
+    /* font-family: "SF Pro Text"; */
     font-size: 5em;
     font-weight: 400;
     line-height: 95px;
@@ -202,6 +199,11 @@ p{
     width: 100px;
 }
 
+ul.work{
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: 1px solid #96A9C4;}
+
 ul.work li{
     margin-bottom: 24px;
 }
@@ -222,12 +224,13 @@ ul.work li:nth-last-child(1){
     margin-bottom: 24px;
 }
 
-.footer_list{
-    font-family: "SF Pro Text";
-}
-
 .footer_list li{
     margin-bottom: 16px;
+}
+
+.footer_list li:hover,
+.footer_list a:hover{
+    color: darkorange;
 }
 
 .social a{
@@ -236,6 +239,11 @@ ul.work li:nth-last-child(1){
 
 .social li{
     display: inline;
+}
+
+.social a:hover{
+    transition: .08s;
+    transform: scale(1.25);
 }
 
 .social li:nth-child(1),
