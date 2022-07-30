@@ -7,7 +7,7 @@ https://judy-nihao.github.io/HEX-Academy-2022-June/Layout01-dessert/index.html
 https://judy-nihao.github.io/HEX-Academy-2022-June/Layout02-chatTalker/index.html    
    
 2022 切版直播班 第一週作業 履歷版型  
-https://judy-nihao.github.io/HEX-Academy-2022-June/Resume  
+https://judy-nihao.github.io/HEX-Academy-2022-June/2022-W1-Resume
 
 2022 切版直播班 第二週作業 個人網頁版型  
 https://judy-nihao.github.io/HEX-Academy-2022-June/2022-W2-PersonalSite
