@@ -1,0 +1,54 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.25rem;
+
+    &__logo{
+        display: block;
+        width: 80px;
+        height: 48.57px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+        background-repeat: no-repeat;
+        text-indent: 100%; 
+        white-space: nowrap;
+        overflow: hidden;
+        background-size: cover;
+
+        &:hover{
+            transform: scale(1.15);
+            transition: 0.15s;
+        }
+    }
+    
+    &__nav__list{
+        display: flex;  
+        gap: 64px;
+
+        @include mobile-size(){
+            display: none;
+        }
+      }
+
+    &__nav__item:hover{
+        box-shadow:  0px 3px 0 $white;
+        transition: 0.2s;
+    }
+
+}   
+
+
+.hamburger-menu{
+    display: none;
+
+    @include mobile-size(){
+        display: block;
+        font-size: 40px;
+
+        &:hover{
+            color: $red-dark;
+        }
+    }
+}

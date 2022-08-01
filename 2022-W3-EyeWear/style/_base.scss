@@ -1,0 +1,61 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family:'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: $white;
+}
+
+.container{
+    max-width: 1368px;
+    padding: 0 36px;
+    margin: 0 auto;
+
+    @include pad-size(){
+        max-width: 768px;
+    }
+
+    @include mobile-size(){
+        max-width: 376px;
+        padding: 0 14px;
+    }
+
+}
+
+
+.title{
+    font-size: 3rem;
+    padding-left: 16px;
+    border-left: 8px solid $red;
+    
+    @include mobile-size(){
+        font-size: 1.5rem   ;
+    }
+}
+
+.fw-bold{
+    font-weight: 700;
+}
+
+
+.bg__primary{
+    background: $red;
+}
+
+.icon-light{
+    color: $white;
+}

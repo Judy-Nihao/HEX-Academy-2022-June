@@ -1,0 +1,31 @@
+.faq{
+    padding-top: 96px;
+    padding-bottom: 80px;
+
+    @include mobile-size(){
+            padding-bottom: 64px;
+        }
+}
+
+.question{
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 24px;
+
+    @include mobile-size(){
+        margin-top: 24px;
+    }
+    
+    &__item{
+        margin-bottom: 32px;
+    }
+    
+    &__item:nth-last-child(1){
+        margin-bottom: 0px;
+    }
+    
+    &__title{
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+}

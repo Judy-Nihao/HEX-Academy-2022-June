@@ -1,0 +1,344 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1368px;
+  padding: 0 36px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 376px;
+    padding: 0 14px;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  padding-left: 16px;
+  border-left: 8px solid #AA0601;
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.bg__primary {
+  background: #AA0601;
+}
+
+.icon-light {
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 1.25rem;
+}
+.header__logo {
+  display: block;
+  width: 80px;
+  height: 48.57px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+}
+.header__logo:hover {
+  transform: scale(1.15);
+  transition: 0.15s;
+}
+.header__nav__list {
+  display: flex;
+  gap: 64px;
+}
+@media (max-width: 767px) {
+  .header__nav__list {
+    display: none;
+  }
+}
+.header__nav__item:hover {
+  box-shadow: 0px 3px 0 #FFFFFF;
+  transition: 0.2s;
+}
+
+.hamburger-menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+    font-size: 40px;
+  }
+  .hamburger-menu:hover {
+    color: #650300;
+  }
+}
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.footer__main {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .footer__main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .footer__nav {
+    margin-bottom: 0;
+  }
+}
+.footer__nav__list {
+  display: flex;
+  gap: 48px;
+}
+@media (max-width: 767px) {
+  .footer__nav__list {
+    display: none;
+  }
+}
+.footer__nav__item:hover {
+  box-shadow: 0px 3px 0 #FFFFFF;
+  transition: 0.2s;
+}
+
+.footer__social {
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 767px) {
+  .footer__social {
+    gap: 8px;
+  }
+}
+.footer__social__icon {
+  width: 48px;
+}
+@media (max-width: 992px) {
+  .footer__social__icon {
+    width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__social__icon {
+    width: 24px;
+  }
+}
+.footer__social__icon:hover {
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+
+.footer__contact a {
+  font-size: 2.25rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .footer__contact a {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+.footer__contact a:hover {
+  transform: translateX(10px);
+  transition: 0.3s;
+}
+.footer__contact .icon__contact {
+  position: relative;
+  top: 5px;
+  margin-right: 22px;
+  font-size: 2.25rem;
+}
+@media (max-width: 767px) {
+  .footer__contact .icon__contact {
+    font-size: 1.5rem;
+  }
+}
+
+.imprint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imprint .copyright {
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .imprint .copyright {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+.imprint .privacy {
+  font-size: 0.875rem;
+  margin-left: auto;
+  margin-right: 48px;
+}
+@media (max-width: 767px) {
+  .imprint .privacy {
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+.imprint .service {
+  font-size: 0.875rem;
+}
+@media (max-width: 767px) {
+  .imprint .service {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+.imprint .privacy:hover,
+.imprint .service:hover {
+  box-shadow: 0px 3px 0 #FFFFFF;
+  transition: 0.2s;
+}
+
+.faq {
+  padding-top: 96px;
+  padding-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .faq {
+    padding-bottom: 64px;
+  }
+}
+
+.question {
+  font-size: 1.5rem;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .question {
+    margin-top: 24px;
+  }
+}
+.question__item {
+  margin-bottom: 32px;
+}
+.question__item:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.question__title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=all.css.map */

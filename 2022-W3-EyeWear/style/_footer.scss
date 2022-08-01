@@ -1,0 +1,158 @@
+.footer{
+    padding-top: 48px;
+    padding-bottom: 32px;
+    position: relative;
+
+    @include mobile-size(){
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+}   
+
+//footer 主要資訊：選單＋社群媒體＋聯絡資料
+.footer__main{
+    padding-bottom: 32px;
+    border-bottom: 1px solid $white;
+    margin-bottom: 32px;
+
+    @include mobile-size(){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: start;
+
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+//選單
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include mobile-size(){
+        margin-bottom: 0;
+    }
+       
+    &__list{
+        display: flex;
+        gap: 48px;
+
+        @include mobile-size(){
+            display: none;
+        }
+    }
+
+    &__item:hover{
+        box-shadow:  0px 3px 0 $white;
+        transition: 0.2s;
+    }
+}
+
+//社群媒體
+.footer__social{
+    display: flex;
+    gap: 32px;
+
+    @include mobile-size(){
+        gap: 8px;
+    }
+
+    &__icon{
+        width: 48px;
+
+        @include pad-size(){
+            width: 40px;
+        }
+
+        @include mobile-size(){
+            width: 24px;
+        }
+    }
+    
+    &__icon:hover{
+        transform: scale(1.15);
+        transition: 0.2s;
+    }
+}
+
+
+//聯絡資料
+.footer__contact{
+
+    a{
+        font-size: 2.25rem;
+        position: relative;
+        
+        @include mobile-size(){
+            font-size: 1rem;   
+            margin-bottom: 8px;
+        }
+    }
+
+    a:hover{
+        transform: translateX(10px);
+        transition: 0.3s;
+    }   
+
+    .icon__contact{
+        position: relative;
+        top: 5px;
+        margin-right: 22px;
+        font-size: 2.25rem;
+
+        @include mobile-size(){
+            font-size: 1.5rem;   
+        }
+    }
+    
+}
+
+//版權宣告
+.imprint{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .copyright{
+        color: $white;
+
+        @include mobile-size(){
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }   
+
+    .privacy{
+        font-size: 0.875rem;
+        margin-left: auto;
+        margin-right: 48px;
+        
+        @include mobile-size(){
+            font-size: 1rem;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+
+    .service{
+        font-size: 0.875rem;
+
+        @include mobile-size(){
+            font-size: 1rem;
+            width: 100%;
+        }
+    }
+
+    .privacy:hover,
+    .service:hover{
+        box-shadow:  0px 3px 0 $white;
+        transition: 0.2s;
+    }
+    
+}
