@@ -21,3 +21,5 @@ https://judy-nihao.github.io/HEX-Academy-2022-June/2022-W3-EyeWear/FAQ.html
 這個是本地端HEX-Academy資料夾的  
 Repo改名稱且重新綁定遠端成功  
 2022/06/27
+
+2022/09/25 Clone到新電腦
